@@ -13,23 +13,31 @@ in single player mode in which the other player is controlled by the game, and i
 mode, where the second player’s mbed setup is remotely controlled over an Ethernet link.
 
 Game Rules
-● Each player is able to see a view of the game world (displayed on its LCD screen)
+
+Each player is able to see a view of the game world (displayed on its LCD screen)
 which contains their blob. This could be just always centered on their blob, or it
 could be something else.
-● A player controls the direction of their blob will move by tilting their board. The
+
+A player controls the direction of their blob will move by tilting their board. The
 game determines the direction by reading the accelerometer.
-● A blob moves at a velocity that is inversely proportional to its mass (area). You are
+
+A blob moves at a velocity that is inversely proportional to its mass (area). You are
 free to set the baseline velocity to enhance the feel of the game.
-● If two blobs collide, the blob with greater mass will consume the blob with lesser
+
+If two blobs collide, the blob with greater mass will consume the blob with lesser
 mass, increasing its own mass correspondingly. We leave it to you to determine
 how dissimilar blobs must be for the smaller to be eaten by the larger.
-● A blobs mass is represented by its area on the screen. That is all blobs have the
+
+A blobs mass is represented by its area on the screen. That is all blobs have the
 same density.
-● A player wins if its blob eats up the opponent’s blob.
-● On startup the world is randomly seeded with an odd number small food blobs.
+
+A player wins if its blob eats up the opponent’s blob.
+
+On startup the world is randomly seeded with an odd number small food blobs.
 Food blobs float around the game world without interacting with each other. In the
 baseline game, player blobs grow by consuming food blobs.
-● A blob cannot move off the edge of the screen. If a food blob reaches the edge of
+
+A blob cannot move off the edge of the screen. If a food blob reaches the edge of
 the game world, it bounces completely elastically (reverses direction without losing
 speed). Player blobs cannot move outside the bounding rectangle of the game
 world.
